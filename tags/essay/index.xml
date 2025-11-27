@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Essay on Marwan Belgueddab</title>
+        <link>https://marwan-belgueddab.com/tags/essay/</link>
+        <description>Recent content in Essay on Marwan Belgueddab</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Marwan Belgueddab</copyright>
+        <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marwan-belgueddab.com/tags/essay/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Beyond Tech - What a Homelab Taught Me</title>
+        <link>https://marwan-belgueddab.com/p/homelab-beyond-tech-lessons/</link>
+        <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://marwan-belgueddab.com/p/homelab-beyond-tech-lessons/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;How many of us start a hobby intending to build a sprawling network infrastructure? I certainly didn’t. I started building a homelab simply to learn new technologies and keep my data close. What began with an old desktop, followed by a small NAS and a Raspberry Pi, has grown into a multi-node cluster housed in a 15U rack. It is something that honestly still surprises me! It wasn&amp;rsquo;t the initial goal, but rather a natural consequence of exploring and learning.&lt;/p&gt;
+&lt;p&gt;Over the past few years, I’ve rebuilt my homelab almost annually, starting from scratch each time because I wanted to implement the new things I had learned. This process revealed how much my approach has evolved since I began. Initially, it was all about mastering the technical aspects, such as understanding hypervisors, Kubernetes, and VLANs, but now I realize there is so much more to it than just the technical challenges.&lt;/p&gt;
+&lt;h2 id=&#34;shifting-from-chaos-to-strategy-a-business-inspired-approach&#34;&gt;Shifting From Chaos to Strategy: A Business-Inspired Approach
+&lt;/h2&gt;&lt;p&gt;Each year, my decision-making process for implementing changes in the lab shifted. It was often driven by budget constraints or current hardware limitations. This year, I decided to be more deliberate and create a structured plan, moving beyond simply choosing technologies based on specs or available gear.&lt;/p&gt;
+&lt;p&gt;I started applying principles I’ve seen used in businesses. First, I define a &lt;em&gt;&lt;strong&gt;business goal&lt;/strong&gt;&lt;/em&gt;: a concise sentence that guides the entire plan and sets the direction for more detailed objectives. This prevents me from getting lost in endless possibilities. Following this, I create an &lt;em&gt;&lt;strong&gt;executive summary&lt;/strong&gt;&lt;/em&gt;, expanding on the initial goal with more technical details. For example, my goal this year was to &lt;em&gt;Reduce manual intervention and improve network performance and hardware efficiency&lt;/em&gt;. This translated into building a more secure, fault-tolerant, and automated lab using all available hardware while improving connection speed and reducing bottlenecks.&lt;/p&gt;
+&lt;p&gt;This helped me define key terms to guide my technical decisions and, crucially, establish clear criteria for success. Simply stating a goal isn’t enough; you need to know how to measure whether you’ve achieved it, how do you know when the project is complete?&lt;/p&gt;
+&lt;p&gt;Since the primary beneficiary was myself, measuring success required a different perspective and it was a valuable exercise. Naturally, I established constraints (like avoiding unwelcome calls from my bank!) and documented what I knew and what remained uncertain.&lt;/p&gt;
+&lt;h2 id=&#34;more-than-just-tech-the-unexpected-benefits--impact&#34;&gt;More Than Just Tech: The Unexpected Benefits &amp;amp; Impact
+&lt;/h2&gt;&lt;p&gt;This process gave me much greater clarity about my direction. It even required me to re-evaluate some initial decisions, thankfully, nothing drastic! The journey involved research, note-taking, and iterative refinement until a clear path emerged. Once the plan was solid, implementation became significantly smoother.&lt;/p&gt;
+&lt;p&gt;I’m accustomed to creating technical plans from business requirements in a professional setting and it&amp;rsquo;s standard practice for many people. Initially, I viewed this as a purely work-related methodology. However, integrating elements of that framework with my own more spontaneous approach proved surprisingly powerful. It helped me focus and avoid the trap of endless searching for ‘the perfect’ solution.&lt;/p&gt;
+&lt;p&gt;Having a homelab is incredibly rewarding as I enjoy computers, tinkering, and especially troubleshooting problems (often ones I create myself). It&amp;rsquo;s become my favorite hobby. The ability to solve these challenges has brought me to where I am today, though I’m acutely aware of the role luck plays in my journey. I often wonder if my enjoyment stemmed from a love of fixing things or if it was simply that constantly troubleshooting computers honed my problem-solving skills.&lt;/p&gt;
+&lt;p&gt;Despite the time, occasional frustrations, and financial investment, I’m immensely satisfied with my homelab journey. Beyond the technical aspects, it has had a mostly positive impact on those around me.&lt;/p&gt;
+&lt;p&gt;To be frank, for a long time, I didn&amp;rsquo;t understand why people didn&amp;rsquo;t get into IT the way I did. I would try to impose my complicated setups on them. But then I realized something important: I don&amp;rsquo;t know how to sew properly, fix every issue with my car, or plumbing. Those are critical skills for everyday life, but they aren&amp;rsquo;t my strong suits. Others are better at those things than I am. So, my role should be to use my specific skills to make technology easier for them, not more complicated.&lt;/p&gt;
+&lt;p&gt;My knowledge allows me to maximize our resources and improve our quality of life, even in small ways. That is why I reworked my lab this year around fault tolerance. If the DNS at home fails, the internet stops working, and that impacts everyone&amp;rsquo;s work at home.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion-more-than-a-hobby-a-path-to-growth&#34;&gt;Conclusion: More than a hobby, a path to growth
+&lt;/h2&gt;&lt;p&gt;Ultimately, my homelab has been a vehicle for exploring my passion for technology. While it’s satisfying to demonstrate what I can build, it&amp;rsquo;s important to also value self reflection: understanding what I’ve accomplished, how I learned, and where I can improve. This approach has shown me new avenues for growth and self-discovery, proving that even a personal hobby can help me grow and humble me. From thinking that my solution is the best to actually creating a solution that has a positive impact for all.&lt;/p&gt;
+&lt;p&gt;I have moved from thinking that my solution is the best, to actually creating a solution that has a positive impact on everyone involved. Don&amp;rsquo;t get me wrong, I don&amp;rsquo;t view my lab differently than before, a nice and very fulfilling hobby. However, now I take a step back to reflect on what I&amp;rsquo;m building, using my skills to serve and be useful to those around me and beyond.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

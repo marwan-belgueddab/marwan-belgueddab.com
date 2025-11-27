@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on Marwan Belgueddab</title>
+        <link>https://marwan-belgueddab.com/tags/</link>
+        <description>Recent content in Tags on Marwan Belgueddab</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Marwan Belgueddab</copyright>
+        <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://marwan-belgueddab.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Essay</title>
+        <link>https://marwan-belgueddab.com/tags/essay/</link>
+        <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://marwan-belgueddab.com/tags/essay/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Homelab</title>
+        <link>https://marwan-belgueddab.com/tags/homelab/</link>
+        <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://marwan-belgueddab.com/tags/homelab/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Opinion</title>
+        <link>https://marwan-belgueddab.com/tags/opinion/</link>
+        <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://marwan-belgueddab.com/tags/opinion/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
