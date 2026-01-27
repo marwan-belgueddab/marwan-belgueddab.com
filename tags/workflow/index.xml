@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Workflow on Marwan Belgueddab</title>
+        <link>https://marwan-belgueddab.com/tags/workflow/</link>
+        <description>Recent content in Workflow on Marwan Belgueddab</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Marwan Belgueddab</copyright>
+        <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://marwan-belgueddab.com/tags/workflow/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>From skeptic to agentic: Playing catch-up with AI on my terms</title>
+        <link>https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/</link>
+        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/</guid>
+        <description>&lt;p&gt;I didn&amp;rsquo;t think agentic workflows would ever apply to me. In fact, I actively refused to jump into the AI hype of 2024 and 2025. I disliked the sensationalist headlines and the &amp;ldquo;dream selling&amp;rdquo; that dominated the industry. Today, I&amp;rsquo;m playing catch-up, but looking back, I still believe my initial hesitation was the right decision.&lt;/p&gt;
+&lt;p&gt;I initially stuck to what felt useful: simple text-to-text interactions. I used ChatGPT when it launched, experimented with Bing Chat and Bard, and dabbled with open-source tools via Ollama. However, the results often felt lackluster, so I let them be. My exposure through work was sufficient to keep me in the loop without diving in headfirst.&lt;/p&gt;
+&lt;p&gt;As the landscape shifted with new tools and approaches, I continued to watch from afar, testing Gemini CLI rapidly or building simple custom Gems, but nothing substantial. I lacked a compelling use case, specifically one that didn&amp;rsquo;t involve sharing personal data with an LLM. Furthermore, I hadn&amp;rsquo;t touched raw code in a decade; my work focused on Infrastructure as Code (IaC) and configuration management, areas where early LLMs struggled and posed significant security risks.&lt;/p&gt;
+&lt;p&gt;However, late in 2024, I used AI to document my homelab, and for the first time, it was &amp;ldquo;good enough.&amp;rdquo; Since then, products have evolved to cover more complex use cases. I have changed how I work, both professionally and in my spare time, adapting agents and AI tools into a seamless workflow.&lt;/p&gt;
+&lt;h2 id=&#34;how-i-work-the-project-approach&#34;&gt;How I Work: The &amp;ldquo;Project&amp;rdquo; Approach
+&lt;/h2&gt;&lt;p&gt;My core work hasn&amp;rsquo;t changed much over the last two years; I still focus on IaC and non-coding technical topics. However, I now utilize the same toolset a software developer would.&lt;/p&gt;
+&lt;p&gt;I treat every task as a distinct &amp;ldquo;Project.&amp;rdquo; Whether I am researching winter tires or architecting a cloud solution, I create a new directory in my personal drive. It starts with a &lt;code&gt;raw_notes.md&lt;/code&gt; file containing my brain dump: what I want, what I &lt;em&gt;think&lt;/em&gt; I want, known information, and known unknowns.&lt;/p&gt;
+&lt;h3 id=&#34;1-research--ideation-gemini-web&#34;&gt;1. Research &amp;amp; Ideation: Gemini Web
+&lt;/h3&gt;&lt;p&gt;For initial research, I use Gemini directly alongside standard search engines. It acts as a sounding board, helping me compare options and decide on parameters for unfamiliar topics.&lt;/p&gt;
+&lt;p&gt;I often ask it to explain concepts using analogies that resonate with my background. Much like the &amp;ldquo;explain in football terms&amp;rdquo; memes, I ask for explanations that map to my existing knowledge. While I initially created a custom Gem for this, I now simply prompt it ad-hoc when clarification is needed.&lt;/p&gt;
+&lt;h3 id=&#34;2-the-powerhouse-gemini-cli&#34;&gt;2. The Powerhouse: Gemini CLI
+&lt;/h3&gt;&lt;p&gt;The second, and perhaps most transformative, tool that really convinced me to use an agentic workflow is the &lt;a class=&#34;link&#34; href=&#34;https://github.com/google-gemini/gemini-cli&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gemini CLI&lt;/a&gt;. It has been a life-changing addition to my use of AI and productivity.&lt;/p&gt;
+&lt;p&gt;If I were researching car tires, I would open the CLI in my project directory and instruct it to find information specific to my vehicle. Unlike a standard chat, I can provide a &lt;code&gt;GEMINI.md&lt;/code&gt; file in the directory. This file acts as a persistent custom prompt, instructing the agent on how to behave globally or per project.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Capabilities:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;System Interaction:&lt;/strong&gt; It can run terminal commands, allowing for quick prototyping and script creation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Self-Correction:&lt;/strong&gt; If a command fails, it analyzes the error output and attempts to fix it automatically.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Extensions &amp;amp; Skills:&lt;/strong&gt; Using &lt;a class=&#34;link&#34; href=&#34;https://geminicli.com/extensions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gemini CLI Extensions&lt;/a&gt;, it can interact with external tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Conductor:&lt;/strong&gt; I use the Conductor extension to transform rough ideas into proper implementation plans (e.g., &lt;code&gt;conductor:plan&lt;/code&gt;), ensuring a structured approach before execution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/gemini-cli-iterm2.png&#34;
+	width=&#34;1752&#34;
+	height=&#34;616&#34;
+	srcset=&#34;https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/gemini-cli-iterm2_hu_e746347c0d0f4aae.png 480w, https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/gemini-cli-iterm2_hu_24a2a92db25731f3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Figure 1: Interacting with Gemini CLI in the terminal to scaffold a project.&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;284&#34;
+		data-flex-basis=&#34;682px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Unlike Claude, which summons multiple sub-agents, Gemini CLI typically feels like interacting with a single agent. When I need research output, I ask it to generate a Markdown report. I wait for it to finish writing the file, then read it directly, eliminating the tedious copy-paste loop from a web browser. (Although now you can find reports in your Google Drive too, found via Gemini Web). Another way I really like using gemini-cli is for quick scripting and/or working on a single document, maybe two. I don’t need a full IDE, and I need a more capable tool than the web to directly interact with my code and system.&lt;/p&gt;
+&lt;h3 id=&#34;3-the-agent-first-ide-google-antigravity&#34;&gt;3. The Agent-First IDE: Google Antigravity
+&lt;/h3&gt;&lt;p&gt;The third tool I&amp;rsquo;ve adopted is &lt;a class=&#34;link&#34; href=&#34;https://antigravity.google&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Antigravity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Previously, I used VS Code with Copilot, refusing to pay for Cursor as I didn&amp;rsquo;t see the value add, and like I said, I refused to jump into that weird AI trend of tools for agents. Mostly because I felt they were just hype and nothing my current tools could do with an update (and I was right). But I still jumped from VS Code because Antigravity changed that. It allows me to leverage my Gemini subscription while also accessing Claude and GPT-OSS 120B models within a unified interface. Yes I could use VS Code with GitHub Copilot, but I already have a subscription to Gemini, and I like the Agent-First approach for Antigravity.&lt;/p&gt;
+&lt;p&gt;I use Antigravity for larger projects requiring multi-file context. My approach here is deliberate; I don&amp;rsquo;t just say &amp;ldquo;do this&amp;rdquo; and burn through tokens. I arrive prepared with a complete design document, often refined by the previous two steps (Gemini Web and Gemini CLI).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Workflow:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the project directory and add the design document.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ask Gemini to review the document and it will prepare an implementation plan that is formatted in a way the agents will understand. This completes the design_document.md file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Review the automated plan, adding comments if key points are missing. And it’s a feature I really like because I can instruct the agent to rework the plan on a specific part if it doesn’t suit me. Much like when you work with colleagues on Google Docs and leave a comment because they didn’t complete their part.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instruct the agent to create the necessary artifacts, and validate every command line in the terminal. You could go yolo, but I rather supervise what is happening and stop it if it deviates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This method allows me to modify documents and code with autocomplete support, significantly speeding up development.&lt;/p&gt;
+&lt;h2 id=&#34;the-risks-vibe-coding-vs-reality&#34;&gt;The Risks: Vibe-Coding vs. Reality
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve decided I won&amp;rsquo;t go back to working without LLMs for tasks taking more than a few hours. I offload repetitive, annoying work to agents, focusing my energy on problem-solving and the &amp;ldquo;fun parts&amp;rdquo; of engineering for me: finding problems and then finding solutions for 3 hours while learning about something new. All while getting frustrated because some documentation was poorly written and I didn’t understand it on the first read.&lt;/p&gt;
+&lt;p&gt;However, this &amp;ldquo;vibe-coding&amp;rdquo; approach comes with risks.&lt;/p&gt;
+&lt;h3 id=&#34;the-touch-grass-factor&#34;&gt;The &amp;ldquo;Touch Grass&amp;rdquo; Factor
+&lt;/h3&gt;&lt;p&gt;Using these tools provides a genuine dopamine hit. Watching an agent magically generate code and watching it use the terminal while generating an output that would take you days in minutes is satisfying and addictive. It’s easy to get lost in the flow, so I have to remind myself to take a step back and not rely on them for everything.&lt;/p&gt;
+&lt;h3 id=&#34;trust-but-verify&#34;&gt;Trust, but Verify
+&lt;/h3&gt;&lt;p&gt;The biggest risk is delegating too much cognitive load without reflection. Machines, no matter how advanced, need critical thinking oversight. They are facilitators, not replacements.&lt;/p&gt;
+&lt;p&gt;If anyone tells you &amp;ldquo;you just don&amp;rsquo;t know how to prompt&amp;rdquo; or that &amp;ldquo;prompt engineering is the only skill you need,&amp;rdquo; run. If you don&amp;rsquo;t understand the underlying technology, you won&amp;rsquo;t understand what the tool is doing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A Real-World Example: Security Failures&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I recently used these tools to write Ansible and Terraform code for deploying resources on Google Cloud Platform (GCP). My organization has strict policies: no external IPs for compute resources and mandatory Identity-Aware Proxy (IAP) usage.&lt;/p&gt;
+&lt;p&gt;I ran three different prompts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy containers on GKE I reach via an IP address or a fqdn.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Securely deploy this container using a hub-and-spoke architecture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy resources with explicit security constraints (No external IP, follow org policies), including a reference to the Google Cloud FAST fabric documentation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In &lt;strong&gt;all three cases&lt;/strong&gt;, the agents created modules that tried to deploy resources with direct internet access, violating organization policies. Even when I explicitly described the constraints, the agents occasionally used manual &lt;code&gt;gcloud&lt;/code&gt; commands or ignored the policy checks.&lt;/p&gt;
+&lt;p&gt;I had to intervene, explicitly forcing the agent to &amp;ldquo;pull the policies to confirm constraints&amp;rdquo; before acting. A user without foundational knowledge would have been happy with the result, unknowingly deploying an insecure infrastructure. That is why I still think it is important to have a solid foundation in the underlying technology. And I don&amp;rsquo;t plan on skipping that, I spend a lot of time reading on the subjects, doing research and testing, a lot. Sometimes I barely trust my own knowledge, there&amp;rsquo;s no reason to trust AI more.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;These tools have exposed some of my weak points and forced me to improve. I now spend more time researching and planning than before, and more importantly, I write more complete and clearer requirements for my &amp;ldquo;projects,&amp;rdquo; whether I will use AI or not.&lt;/p&gt;
+&lt;p&gt;I remain mindful of how I use AI. I&amp;rsquo;m not trying to stay on the bleeding edge of every new release. Instead, I&amp;rsquo;ve found a pragmatic stack that works for me. It helps me spend less time on boilerplate and more time with my family and hobbies, while still allowing me to reach technical heights I couldn&amp;rsquo;t achieve before.&lt;/p&gt;
+&lt;p&gt;And I will make sure to use AI to raise the floor: of my knowledge and my quality of life, while still being mindful of its risks and implications on society.&lt;/p&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gemini CLI:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/google-gemini/gemini-cli&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google Antigravity:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://antigravity.google&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Official Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extensions:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://geminicli.com/extensions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gemini CLI Extensions Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Skills:&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://agentskills.io/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Anthropic Skills&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

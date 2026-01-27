@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="I refused to jump into the AI hype. I eventually built a pragmatic, agentic workflow without losing my critical thinking.">
+<title>From skeptic to agentic: Playing catch-up with AI on my terms</title>
+
+<link rel='canonical' href='https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="From skeptic to agentic: Playing catch-up with AI on my terms">
+<meta property='og:description' content="I refused to jump into the AI hype. I eventually built a pragmatic, agentic workflow without losing my critical thinking.">
+<meta property='og:url' content='https://marwan-belgueddab.com/p/skeptic-to-agentic-workflow/'>
+<meta property='og:site_name' content='Marwan Belgueddab'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Workflow' /><meta property='article:tag' content='Engineering' /><meta property='article:published_time' content='2026-01-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-21T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="From skeptic to agentic: Playing catch-up with AI on my terms">
+<meta name="twitter:description" content="I refused to jump into the AI hype. I eventually built a pragmatic, agentic workflow without losing my critical thinking.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_88d7a06ebc988be7.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Marwan Belgueddab</a></h1>
+            <h2 class="site-description">Tech enthousiast, homelabber, overthinker.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/marwan-belgueddab'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#how-i-work-the-project-approach">How I Work: The &ldquo;Project&rdquo; Approach</a>
+      <ol>
+        <li><a href="#1-research--ideation-gemini-web">1. Research &amp; Ideation: Gemini Web</a></li>
+        <li><a href="#2-the-powerhouse-gemini-cli">2. The Powerhouse: Gemini CLI</a></li>
+        <li><a href="#3-the-agent-first-ide-google-antigravity">3. The Agent-First IDE: Google Antigravity</a></li>
+      </ol>
+    </li>
+    <li><a href="#the-risks-vibe-coding-vs-reality">The Risks: Vibe-Coding vs. Reality</a>
+      <ol>
+        <li><a href="#the-touch-grass-factor">The &ldquo;Touch Grass&rdquo; Factor</a></li>
+        <li><a href="#trust-but-verify">Trust, but Verify</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ol>
+        <li><a href="#resources">Resources</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/technology/" >
+                Technology
+            </a>
+        
+            <a href="/categories/productivity/" >
+                Productivity
+            </a>
+        
+            <a href="/categories/ai/" >
+                AI
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/skeptic-to-agentic-workflow/">From skeptic to agentic: Playing catch-up with AI on my terms</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            I refused to jump into the AI hype. I eventually built a pragmatic, agentic workflow without losing my critical thinking.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-21T00:00:00Z'>Jan 21, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    8 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>I didn&rsquo;t think agentic workflows would ever apply to me. In fact, I actively refused to jump into the AI hype of 2024 and 2025. I disliked the sensationalist headlines and the &ldquo;dream selling&rdquo; that dominated the industry. Today, I&rsquo;m playing catch-up, but looking back, I still believe my initial hesitation was the right decision.</p>
+<p>I initially stuck to what felt useful: simple text-to-text interactions. I used ChatGPT when it launched, experimented with Bing Chat and Bard, and dabbled with open-source tools via Ollama. However, the results often felt lackluster, so I let them be. My exposure through work was sufficient to keep me in the loop without diving in headfirst.</p>
+<p>As the landscape shifted with new tools and approaches, I continued to watch from afar, testing Gemini CLI rapidly or building simple custom Gems, but nothing substantial. I lacked a compelling use case, specifically one that didn&rsquo;t involve sharing personal data with an LLM. Furthermore, I hadn&rsquo;t touched raw code in a decade; my work focused on Infrastructure as Code (IaC) and configuration management, areas where early LLMs struggled and posed significant security risks.</p>
+<p>However, late in 2024, I used AI to document my homelab, and for the first time, it was &ldquo;good enough.&rdquo; Since then, products have evolved to cover more complex use cases. I have changed how I work, both professionally and in my spare time, adapting agents and AI tools into a seamless workflow.</p>
+<h2 id="how-i-work-the-project-approach">How I Work: The &ldquo;Project&rdquo; Approach
+</h2><p>My core work hasn&rsquo;t changed much over the last two years; I still focus on IaC and non-coding technical topics. However, I now utilize the same toolset a software developer would.</p>
+<p>I treat every task as a distinct &ldquo;Project.&rdquo; Whether I am researching winter tires or architecting a cloud solution, I create a new directory in my personal drive. It starts with a <code>raw_notes.md</code> file containing my brain dump: what I want, what I <em>think</em> I want, known information, and known unknowns.</p>
+<h3 id="1-research--ideation-gemini-web">1. Research &amp; Ideation: Gemini Web
+</h3><p>For initial research, I use Gemini directly alongside standard search engines. It acts as a sounding board, helping me compare options and decide on parameters for unfamiliar topics.</p>
+<p>I often ask it to explain concepts using analogies that resonate with my background. Much like the &ldquo;explain in football terms&rdquo; memes, I ask for explanations that map to my existing knowledge. While I initially created a custom Gem for this, I now simply prompt it ad-hoc when clarification is needed.</p>
+<h3 id="2-the-powerhouse-gemini-cli">2. The Powerhouse: Gemini CLI
+</h3><p>The second, and perhaps most transformative, tool that really convinced me to use an agentic workflow is the <a class="link" href="https://github.com/google-gemini/gemini-cli"  target="_blank" rel="noopener"
+    >Gemini CLI</a>. It has been a life-changing addition to my use of AI and productivity.</p>
+<p>If I were researching car tires, I would open the CLI in my project directory and instruct it to find information specific to my vehicle. Unlike a standard chat, I can provide a <code>GEMINI.md</code> file in the directory. This file acts as a persistent custom prompt, instructing the agent on how to behave globally or per project.</p>
+<p><strong>Key Capabilities:</strong></p>
+<ul>
+<li>
+<p><strong>System Interaction:</strong> It can run terminal commands, allowing for quick prototyping and script creation.</p>
+</li>
+<li>
+<p><strong>Self-Correction:</strong> If a command fails, it analyzes the error output and attempts to fix it automatically.</p>
+</li>
+<li>
+<p><strong>Extensions &amp; Skills:</strong> Using <a class="link" href="https://geminicli.com/extensions"  target="_blank" rel="noopener"
+    >Gemini CLI Extensions</a>, it can interact with external tools.</p>
+</li>
+<li>
+<p><strong>Conductor:</strong> I use the Conductor extension to transform rough ideas into proper implementation plans (e.g., <code>conductor:plan</code>), ensuring a structured approach before execution.</p>
+</li>
+</ul>
+<p><img src="/p/skeptic-to-agentic-workflow/gemini-cli-iterm2.png"
+	width="1752"
+	height="616"
+	srcset="/p/skeptic-to-agentic-workflow/gemini-cli-iterm2_hu_e746347c0d0f4aae.png 480w, /p/skeptic-to-agentic-workflow/gemini-cli-iterm2_hu_24a2a92db25731f3.png 1024w"
+	loading="lazy"
+	
+		alt="Figure 1: Interacting with Gemini CLI in the terminal to scaffold a project."
+	
+	
+		class="gallery-image" 
+		data-flex-grow="284"
+		data-flex-basis="682px"
+	
+></p>
+<p>Unlike Claude, which summons multiple sub-agents, Gemini CLI typically feels like interacting with a single agent. When I need research output, I ask it to generate a Markdown report. I wait for it to finish writing the file, then read it directly, eliminating the tedious copy-paste loop from a web browser. (Although now you can find reports in your Google Drive too, found via Gemini Web). Another way I really like using gemini-cli is for quick scripting and/or working on a single document, maybe two. I don’t need a full IDE, and I need a more capable tool than the web to directly interact with my code and system.</p>
+<h3 id="3-the-agent-first-ide-google-antigravity">3. The Agent-First IDE: Google Antigravity
+</h3><p>The third tool I&rsquo;ve adopted is <a class="link" href="https://antigravity.google"  target="_blank" rel="noopener"
+    >Google Antigravity</a>.</p>
+<p>Previously, I used VS Code with Copilot, refusing to pay for Cursor as I didn&rsquo;t see the value add, and like I said, I refused to jump into that weird AI trend of tools for agents. Mostly because I felt they were just hype and nothing my current tools could do with an update (and I was right). But I still jumped from VS Code because Antigravity changed that. It allows me to leverage my Gemini subscription while also accessing Claude and GPT-OSS 120B models within a unified interface. Yes I could use VS Code with GitHub Copilot, but I already have a subscription to Gemini, and I like the Agent-First approach for Antigravity.</p>
+<p>I use Antigravity for larger projects requiring multi-file context. My approach here is deliberate; I don&rsquo;t just say &ldquo;do this&rdquo; and burn through tokens. I arrive prepared with a complete design document, often refined by the previous two steps (Gemini Web and Gemini CLI).</p>
+<p><strong>The Workflow:</strong></p>
+<ol>
+<li>
+<p>Open the project directory and add the design document.</p>
+</li>
+<li>
+<p>Ask Gemini to review the document and it will prepare an implementation plan that is formatted in a way the agents will understand. This completes the design_document.md file.</p>
+</li>
+<li>
+<p>Review the automated plan, adding comments if key points are missing. And it’s a feature I really like because I can instruct the agent to rework the plan on a specific part if it doesn’t suit me. Much like when you work with colleagues on Google Docs and leave a comment because they didn’t complete their part.</p>
+</li>
+<li>
+<p>Instruct the agent to create the necessary artifacts, and validate every command line in the terminal. You could go yolo, but I rather supervise what is happening and stop it if it deviates.</p>
+</li>
+</ol>
+<p>This method allows me to modify documents and code with autocomplete support, significantly speeding up development.</p>
+<h2 id="the-risks-vibe-coding-vs-reality">The Risks: Vibe-Coding vs. Reality
+</h2><p>I&rsquo;ve decided I won&rsquo;t go back to working without LLMs for tasks taking more than a few hours. I offload repetitive, annoying work to agents, focusing my energy on problem-solving and the &ldquo;fun parts&rdquo; of engineering for me: finding problems and then finding solutions for 3 hours while learning about something new. All while getting frustrated because some documentation was poorly written and I didn’t understand it on the first read.</p>
+<p>However, this &ldquo;vibe-coding&rdquo; approach comes with risks.</p>
+<h3 id="the-touch-grass-factor">The &ldquo;Touch Grass&rdquo; Factor
+</h3><p>Using these tools provides a genuine dopamine hit. Watching an agent magically generate code and watching it use the terminal while generating an output that would take you days in minutes is satisfying and addictive. It’s easy to get lost in the flow, so I have to remind myself to take a step back and not rely on them for everything.</p>
+<h3 id="trust-but-verify">Trust, but Verify
+</h3><p>The biggest risk is delegating too much cognitive load without reflection. Machines, no matter how advanced, need critical thinking oversight. They are facilitators, not replacements.</p>
+<p>If anyone tells you &ldquo;you just don&rsquo;t know how to prompt&rdquo; or that &ldquo;prompt engineering is the only skill you need,&rdquo; run. If you don&rsquo;t understand the underlying technology, you won&rsquo;t understand what the tool is doing.</p>
+<p><strong>A Real-World Example: Security Failures</strong></p>
+<p>I recently used these tools to write Ansible and Terraform code for deploying resources on Google Cloud Platform (GCP). My organization has strict policies: no external IPs for compute resources and mandatory Identity-Aware Proxy (IAP) usage.</p>
+<p>I ran three different prompts:</p>
+<ol>
+<li>
+<p>Deploy containers on GKE I reach via an IP address or a fqdn.</p>
+</li>
+<li>
+<p>Securely deploy this container using a hub-and-spoke architecture.</p>
+</li>
+<li>
+<p>Deploy resources with explicit security constraints (No external IP, follow org policies), including a reference to the Google Cloud FAST fabric documentation.</p>
+</li>
+</ol>
+<p>In <strong>all three cases</strong>, the agents created modules that tried to deploy resources with direct internet access, violating organization policies. Even when I explicitly described the constraints, the agents occasionally used manual <code>gcloud</code> commands or ignored the policy checks.</p>
+<p>I had to intervene, explicitly forcing the agent to &ldquo;pull the policies to confirm constraints&rdquo; before acting. A user without foundational knowledge would have been happy with the result, unknowingly deploying an insecure infrastructure. That is why I still think it is important to have a solid foundation in the underlying technology. And I don&rsquo;t plan on skipping that, I spend a lot of time reading on the subjects, doing research and testing, a lot. Sometimes I barely trust my own knowledge, there&rsquo;s no reason to trust AI more.</p>
+<h2 id="conclusion">Conclusion
+</h2><p>These tools have exposed some of my weak points and forced me to improve. I now spend more time researching and planning than before, and more importantly, I write more complete and clearer requirements for my &ldquo;projects,&rdquo; whether I will use AI or not.</p>
+<p>I remain mindful of how I use AI. I&rsquo;m not trying to stay on the bleeding edge of every new release. Instead, I&rsquo;ve found a pragmatic stack that works for me. It helps me spend less time on boilerplate and more time with my family and hobbies, while still allowing me to reach technical heights I couldn&rsquo;t achieve before.</p>
+<p>And I will make sure to use AI to raise the floor: of my knowledge and my quality of life, while still being mindful of its risks and implications on society.</p>
+<h3 id="resources">Resources
+</h3><ul>
+<li><strong>Gemini CLI:</strong> <a class="link" href="https://github.com/google-gemini/gemini-cli"  target="_blank" rel="noopener"
+    >GitHub Repository</a></li>
+<li><strong>Google Antigravity:</strong> <a class="link" href="https://antigravity.google"  target="_blank" rel="noopener"
+    >Official Documentation</a></li>
+<li><strong>Extensions:</strong> <a class="link" href="https://geminicli.com/extensions"  target="_blank" rel="noopener"
+    >Gemini CLI Extensions Gallery</a></li>
+<li><strong>Skills:</strong> <a class="link" href="https://agentskills.io/home"  target="_blank" rel="noopener"
+    >Anthropic Skills</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ai/">AI</a>
+        
+            <a href="/tags/workflow/">Workflow</a>
+        
+            <a href="/tags/engineering/">Engineering</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 Marwan Belgueddab
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
